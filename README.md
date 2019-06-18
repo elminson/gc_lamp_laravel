@@ -14,9 +14,9 @@ XML PHP Extension
 ```
 
 ```
-git clone https://github.com/elminson/google-presentation-google-cloud_lamp_laravel.git todo
+sudo git clone https://github.com/elminson/google-presentation-google-cloud_lamp_laravel.git todo
 cd todo
-composer install
+sudo composer install
 sudo chmod 777 storage/* -R
 ```
 Update .env with your DB information
