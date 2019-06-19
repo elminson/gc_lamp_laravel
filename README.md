@@ -25,3 +25,16 @@ php artisan migrate
 php artisan db:seed
 
 ```
+
+Update debian from php7.0 to php7.3
+```
+sudo apt install ca-certificates apt-transport-https
+wget -q https://packages.sury.org/php/apt.gpg -O- | sudo apt-key add -
+echo "deb https://packages.sury.org/php/ stretch main" | sudo tee /etc/apt/sources.list.d/php.list
+sudo apt update
+sudo apt install php7.3 php7.3-cli php7.3-common php7.3-curl php7.3-mbstring php7.3-mysql php7.3-xml php7.3-gd
+sudo apt-get purge php7.0-common
+sudo apt install phpmyadmin*
+sudo a2enmod php7.3
+sudo /etc/init.d/apache2  restart
+```
