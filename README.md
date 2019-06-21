@@ -14,7 +14,7 @@ XML PHP Extension
 ```
 
 ```
-sudo git clone https://github.com/elminson/google-presentation-google-cloud_lamp_laravel.git todo
+sudo git clone https://github.com/elminson/gc_lamp_laravel.git todo
 cd todo
 sudo composer install
 sudo chmod 777 storage/* -R
